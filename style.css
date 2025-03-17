@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #161578, #b81055);
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.headings-container h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.headings-container h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #ccc;
+}
+
+.text-control, .select-control, input[type="file"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.text-control:focus, .select-control:focus, input[type="file"]:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: #F4244C;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+    background: #444;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="range"]:focus {
+    border-color: #F4244C;
+}
+
+button {
+    margin: 10px 5px;
+}
+
+.btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-image: linear-gradient(45deg, #F4244C, #F57D4E);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-image: linear-gradient(45deg, #f05765, #f5996e);
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    background-image: linear-gradient(45deg, #d03c50, #f38157);
+    transform: translateY(2px);
+}
+
+.error-para {
+    color: #f44336;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.select-control {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.select-control:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+#pdfUpload {
+    padding: 15px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #fff;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #fff;
+}
+
+#pdfUpload::file-selector-button {
+    background: #F4244C;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#pdfUpload:hover::file-selector-button {
+    background: #F57D4E;
+}
+
+/* Container for Text Area and PDF Upload */
+.interaction-container {
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .headings-container h1 {
+        font-size: 30px;
+    }
+
+    .headings-container h3 {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    .text-control, .select-control, input[type="file"], input[type="range"] {
+        font-size: 14px;
+    }
+}

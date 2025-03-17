@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="app-container">
+            <div class="headings-container">
+                <h1>Text to Speech Converter</h1>
+                <h3>Enter Text, Upload PDF, or Convert it into Speech</h3>
+            </div>
+
+            <div class="interaction-container">
+                <textarea id="textToConvert" placeholder="Enter text..." cols="35" rows="6" class="text-control"></textarea>
+                
+                <label for="voiceSelect">Choose Voice:</label>
+                <select id="voiceSelect" class="select-control"></select>
+
+                <label for="rate">Rate:</label>
+                <input type="range" id="rate" min="0.5" max="2" step="0.1" value="1">
+
+                <label for="pitch">Pitch:</label>
+                <input type="range" id="pitch" min="0" max="2" step="0.1" value="1">
+
+                <label for="pdfUpload">Upload PDF:</label>
+                <input type="file" id="pdfUpload" accept="application/pdf" class="select-control">
+
+                <p class="error-para"></p>
+
+                <div class="button-container">
+                    <button class="btn" id="convertBtn">Play</button>
+                    <button class="btn" id="pauseBtn">Pause</button>
+                    <button class="btn" id="stopBtn">Stop</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
